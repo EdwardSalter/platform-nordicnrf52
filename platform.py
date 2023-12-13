@@ -53,7 +53,7 @@ class Nordicnrf52Platform(PlatformBase):
                 if not IS_WINDOWS:
                     self.packages["tool-gperf"]["optional"] = False
 
-            if board in ("nano33ble", "nicla_sense_me"):
+            if board in ("nano33ble", "nicla_sense_me", "seeed_studio_xiao_nrf52_sense"):
                 self.packages["toolchain-gccarmnoneeabi"]["version"] = "~1.70201.0"
                 self.frameworks["arduino"]["package"] = "framework-arduino-mbed"
                 self.frameworks["arduino"][
