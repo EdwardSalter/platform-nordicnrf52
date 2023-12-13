@@ -5,7 +5,7 @@
     },
     "core": "arduino",
     "cpu": "cortex-m4",
-    "extra_flags": "-DARDUINO_SEEED_XIAO_SENSE -DARDUINO_ARCH_NRF52840",
+    "extra_flags": "-DARDUINO_SEEED_XIAO_SENSE -DNRF52840_XXAA",
     "f_cpu": "64000000L",
     "mcu": "nrf52840",
     "variant": "SEEEDSTUDIO_XIAO",

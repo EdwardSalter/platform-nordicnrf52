@@ -60,6 +60,9 @@ class Nordicnrf52Platform(PlatformBase):
                     "script"
                 ] = "builder/frameworks/arduino/mbed-core/arduino-core-mbed.py"
 
+            if board in ("seeed_studio_xiao_nrf52_sense"):
+                self.packages["tool-adafruit-nrfutil"]["optional"] = False
+
         if set(["bootloader", "erase"]) & set(targets):
             self.packages["tool-nrfjprog"]["optional"] = False
         elif (upload_protocol and upload_protocol != "nrfjprog"
