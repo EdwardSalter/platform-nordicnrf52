@@ -7,12 +7,7 @@
     "cpu": "cortex-m4",
     "extra_flags": "-DARDUINO_SEEED_XIAO_SENSE -DNRF52840_XXAA",
     "f_cpu": "64000000L",
-    "mcu": "nrf52840",
-    "softdevice": {
-      "sd_name": "s140",
-      "sd_version": "7.3.0",
-      "sd_fwid": "0x0123"
-    }
+    "mcu": "nrf52840"
   },
   "connectivity": [
     "bluetooth"
