@@ -8,7 +8,12 @@
     "extra_flags": "-DARDUINO_SEEED_XIAO_SENSE -DARDUINO_ARCH_NRF52840",
     "f_cpu": "64000000L",
     "mcu": "nrf52840",
-    "variant": "SEEEDSTUDIO_XIAO"
+    "variant": "SEEEDSTUDIO_XIAO",
+    "softdevice": {
+      "sd_name": "s140",
+      "sd_version": "7.3.0",
+      "sd_fwid": "0x0123"
+    }
   },
   "connectivity": [
     "bluetooth"
@@ -28,7 +33,7 @@
   "upload": {
     "maximum_ram_size": 262144,
     "maximum_size": 2097152,
-    "protocol": "cmsis-dap",
+    "protocol": "nrfutil",
     "protocols": [
       "jlink",
       "nrfjprog",
